@@ -1,0 +1,44 @@
+body {
+    background-image: url("../img/background_books.jpg"); /* 背景画像を設定 */
+    background-size: cover;                         /* 全画面に広げる */
+    background-position: center;                    /* 真ん中に配置 */
+    background-repeat: no-repeat;                   /* 繰り返さない */
+    background-attachment: fixed;                   /* スクロールしても背景固定 */
+    font-family: 'M PLUS Rounded 1c', sans-serif;   /* フォント指定（Google Fonts） */
+}
+.nav-transparent {
+    background-color: rgba(255, 255, 255, 0.6) !important;
+    backdrop-filter: blur(4px);
+}
+.site-title {
+    font-family: 'Sawarabi Mincho', serif;
+    font-size: 2.2rem;
+    font-weight: 600;
+}
+.form-box {
+    max-width: 600px;
+    background-color: rgba(255, 255, 255, 0.85);  /* 背景白・少し透過 */
+    padding: 2rem;
+    border-radius: 15px;
+    box-shadow: 0 4px 12px rgba(0,0,0,0.2);
+}
+
+textarea.form-control {
+    resize: none;
+}
+.btn-send {
+    background-color: #6c8c6b;  /* くすみグリーン */
+    color: white;
+    padding: 0.5rem 1.5rem;
+    border-radius: 30px;
+    font-weight: bold;
+    border: none;
+    transition: 0.3s;
+    font-size: 1rem;
+}
+
+.btn-send:hover {
+    background-color: #4e6e4e;
+    transform: scale(1.05);
+    cursor: pointer;
+}

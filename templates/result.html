@@ -1,0 +1,24 @@
+{% extends "layout.html" %}
+
+{% block content %}
+<div class="container mt-4">
+    <h2 class="mb-4">あなたの気持ちにぴったりな一冊はこれ！</h2>
+
+    <div class="card mb-3">
+        <img src="{{ image_url }}" class="card-img-top" alt="本の表紙" style="max-height: 300px; object-fit: contain;">
+        <div class="card-header font-weight-bold">
+            【タイトル】{{ title }}
+        </div>
+        <div class="card-body">
+            <h5 class="card-title">【著者】{{ author }}</h5>
+            <p class="card-text">【あらすじ】{{ summary }}</p>
+        </div>
+    </div>
+
+    <div class="alert alert-secondary">
+        あなたの入力：「{{ input_text }}」
+    </div>
+
+    <a href="/" class="btn btn-outline-primary">もう一度入力する</a>
+</div>
+{% endblock %}

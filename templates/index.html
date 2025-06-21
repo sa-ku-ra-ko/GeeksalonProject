@@ -1,0 +1,14 @@
+{% extends "layout.html" %}
+
+{% block content %}
+<div class="enter_btn text-center" >
+    <h2>今、どんな気分ですか？</h2>
+    <form action = "/upload" method="post" class="mx-auto form-box">
+        <div class="form-group">
+            <textarea name="user_text" class="form-control" rows="4" placeholder="今の気持ちを書いてみてね"></textarea>
+        </div>
+        <button type="submit" class="btn btn-send">送信</button>
+
+    </form>
+</div>
+{% endblock %}

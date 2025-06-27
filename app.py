@@ -3,7 +3,7 @@ from flask import (
      request, 
      render_template)
 
-from model import predict
+from model.book_model import predict  # モジュールパス変更
 
 app = Flask(__name__)
 

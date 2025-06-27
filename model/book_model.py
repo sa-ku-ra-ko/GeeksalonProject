@@ -29,7 +29,7 @@ class SentenceLukeJapanese:
 # モデルとデータを初期化
 MODEL_NAME = "sonoisa/sentence-luke-japanese-base-lite"
 model = SentenceLukeJapanese(MODEL_NAME)
-data = pd.read_csv("C:/Users/sabb-/GeekSalon/MYPRODUCT/data/bookmeter_ranking.csv")
+data = pd.read_csv("data/bookmeter_ranking.csv")
 
 def predict(query):
     book_vectors = torch.load("model/book_vectors.pt")

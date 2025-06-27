@@ -1,4 +1,4 @@
 __pycache__/
 *.pyc
-model/
-build_vector.py
+model/build_vector.py
+
